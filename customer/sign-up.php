@@ -171,6 +171,7 @@ if(isset($_SESSION['UserID'])){
 								$code = "SELECT userName,userID FROM user_table WHERE userName='$patient_name'";
                                 $res = $db->query($code);
                                 $user = $res->fetch_assoc();
+                                
                                 $_SESSION['UserName'] = $user['userName'];
                                 $_SESSION['UserID'] = $user['userID'];
 
